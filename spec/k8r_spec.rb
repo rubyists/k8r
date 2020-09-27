@@ -1,11 +1,14 @@
 # frozen_string_literal: true
 
-RSpec.describe K8r do
-  it 'has a version number' do
-    expect(K8r::VERSION).not_to be nil
-  end
+# Global namespace
+module Rubyists
+  RSpec.describe K8r do
+    it 'has a version number' do
+      expect(K8r::VERSION).not_to be nil
+    end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+    it 'can load libraries' do
+      expect { subject.L 'version' }.not_to raise_error
+    end
   end
 end

@@ -6,7 +6,7 @@ require 'k8r/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'k8r'
-  spec.version       = K8r::VERSION
+  spec.version       = Rubyists::K8r::VERSION
   spec.authors       = ['Tj (bougyman) Vanderpoel']
   spec.email         = ['tj@rubyists.com']
 
